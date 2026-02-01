@@ -14,6 +14,11 @@ public class Student {
     private String name;
     private String course;
     private String email;
+
+	public Student() {
+		// TODO Auto-generated constructor stub
+		int apappap=0;
+	}
 	public Long getId() {
 		return id;
 	}

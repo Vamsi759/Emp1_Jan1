@@ -5,9 +5,6 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class Student {
 
     @Id
@@ -17,25 +14,6 @@ public class Student {
     private String name;
     private String course;
     private String email;
-    public Student() {
-        // required by Hibernate
-    }
-
-    public Student(String name) {
-        this.name=name;
-    }
-    
-    public Student(Long id, String name) {  // ❌ only parameterized constructor
-        this.id = id;
-        this.name = name;
-    }
-    
-    public Student(Object object, String name2, String course2, String email2) {
-		// TODO Auto-generated constructor stub
-    	id=(Long)object;name=name2;course=course2;
-    	email=email2;
-    	
-	}
 	public Long getId() {
 		return id;
 	}
@@ -60,5 +38,8 @@ public class Student {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+    
+    
+   
 	
 }

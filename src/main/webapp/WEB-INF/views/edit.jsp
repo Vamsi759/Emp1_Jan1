@@ -37,13 +37,15 @@
     <h2>Edit Student</h2>
 
     <form action="/edit/${student.id}" method="post">
-
+    
+    
+Name :
         <input type="text" name="name" class="form-control" placeholder="Enter Name"
                value="${student.name}"/>
-
+Course:
         <input type="text" name="course" class="form-control" placeholder="Enter Course"
                value="${student.course}"/>
-
+Gmail:
         <input type="text" name="email" class="form-control" placeholder="Enter Email"
                value="${student.email}"/>
 

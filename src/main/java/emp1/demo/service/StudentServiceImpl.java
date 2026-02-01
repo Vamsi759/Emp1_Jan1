@@ -43,7 +43,6 @@ public class StudentServiceImpl implements StudentService {
         s.setEmail(dto.getEmail());
         s.setCourse(dto.getCourse());
         repo.save(s);
-
         dto.setId(id);
         return dto;
     }
@@ -52,4 +51,6 @@ public class StudentServiceImpl implements StudentService {
     public void delete(Long id) {
         repo.deleteById(id);
     }
+    
+    
 }

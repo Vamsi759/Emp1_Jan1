@@ -20,7 +20,23 @@ public class StudentController {
     public String list(Model model) {
         model.addAttribute("ss", service.getAll());
         return "list";
+        
+        // return java is robust and secure
+        // will return in tne home may be
     }
+    
+    @GetMapping("dd")
+    @ResponseBody
+    public String lists(Model model) {
+        model.addAttribute("ss", service.getAll());
+        return "DEn is dare ";
+        
+        // return java is robust and secure
+        // will return in tne home may be
+        //by deafut retunrn the views only
+    }
+    
+    
 
     // Open form
     @GetMapping("/add")

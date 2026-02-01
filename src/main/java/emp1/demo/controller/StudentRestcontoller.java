@@ -13,20 +13,27 @@ import emp1.demo.StudentDto.StudentDto;
 import emp1.demo.service.StudentService;
 
 @RestController 
+//@CrossOrigin(origins = "${app.cors.allowed-origin}")
+//@CrossOrigin(origins = "http://localhost:3000")
+
+//@CrossOrigin(origins = "http://localhost:3000")
+
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/students")
-@CrossOrigin(origins = "http://localhost:3000")
 public class StudentRestcontoller {
 
     @Autowired
     private StudentService service;
 
     // --- CRUD Operations ---
+    
 
     /**
      * READ - Get all students (equivalent to list() in the old controller)
      * GET /api/students
      * Returns: List<StudentDto>
      */
+    
     @GetMapping
     public List<StudentDto> getAllStudents() {
         // Automatically converted to JSON by Spring

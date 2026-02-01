@@ -30,12 +30,23 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-    <!-- PostgreSQL Driver -->
+    <!-- PostgreSQL Driver >
     <dependency>
     <groupId>org.postgresql</groupId>
     <artifactId>postgresql</artifactId>
     <version>42.5.4</version>
+</dependency-->
+
+<!-- PostgreSQL Driver (Neon) -->
+<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <scope>runtime</scope>
 </dependency>
+
+
+
+
 
     <!-- JSP Support -->
     <dependency>

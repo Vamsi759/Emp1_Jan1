@@ -11,7 +11,10 @@ public class StudentDto {
     private String name;
     private String course;
     private String email;
-    
+    public StudentDto() {
+		// TODO Auto-generated constructor stub
+		int apapapap=0;
+	}
     
 	public StudentDto(Long id2, String name2, String course2, String email2) {
 		// TODO Auto-generated constructor stub
